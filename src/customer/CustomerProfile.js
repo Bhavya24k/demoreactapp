@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './customer.css';
-import config from '../config'
 export default function CustomerProfile() {
   const [customerData, setCustomerData] = useState(null);
 

@@ -1,12 +1,9 @@
 import React from 'react';
 import { Route, Routes, Link, useNavigate } from 'react-router-dom';
 import './customer.css';
-import config from '../config'
 import CustomerHome from './CustomerHome';
 import CustomerProfile from './CustomerProfile';
 import ViewItemsPosted from './ViewItemsPosted';
-import CustomerLogin from './CustomerLogin';
-import OrderItems from './ViewOrders';
 import ViewOrders from './ViewOrders';
 import UpdateProfile from './UpdateProfile';
 

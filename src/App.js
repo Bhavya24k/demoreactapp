@@ -1,6 +1,5 @@
 // import logo from './logo.svg';
 // import './App.css';
-import {Routes,Route} from 'react-router-dom'
 import { BrowserRouter as Router} from "react-router-dom";
 import MainNavBar from './main/MainNavBar';
 import CustomerNavBar from './customer/CustomerNavBar';

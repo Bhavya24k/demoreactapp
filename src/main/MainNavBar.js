@@ -6,9 +6,7 @@ import CustomerLogin from './../customer/CustomerLogin';
 import Registration from './../customer/Registration';
 import AdminLogin from './../admin/AdminLogin';
 import SellerLogin from '../seller/SellerLogin';
-import PageNotFound from './PageNotFound';
 import SellerRegistration from './../seller/SellerRegistration';
-import config from '../config'
 
 export default function MainNavBar({ onAdminLogin, onCustomerLogin, onSellerLogin }) {
   return (

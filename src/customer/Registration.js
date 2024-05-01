@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import config from '../config'
 export default function Registration() 
 {
   //formData state variable is initialized with all required keys and empty values

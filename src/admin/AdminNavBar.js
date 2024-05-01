@@ -1,9 +1,9 @@
 import React from 'react';
-import { Routes, Route, Link, useNavigate, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 import ViewCustomers from './ViewCustomers';
 import ViewSellers from './ViewSellers';
 import AdminHome from './AdminHome';
-import config from '../config'
+
 export default function AdminNavBar() {
   const navigate = useNavigate();
 
