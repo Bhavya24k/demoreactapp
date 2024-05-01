@@ -265,15 +265,9 @@ nav li {
     height: 100%;
     object-fit: cover;
   }
-
-  .fullscreen-image-container {
-    background-image: url('c:\2_2\MSWD\SDPPROJECT\frontendapp\sdpproject\src\images\pic5.png');
-    background-size: cover; /* Same as object-fit: cover */
-    background-position: center; /* Center the image */
-  }
   
   .fullscreen-image {
-    display: none; /* Hide the actual image element */
+    display: none;
   }
   
   
