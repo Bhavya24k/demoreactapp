@@ -8,7 +8,7 @@ export default function AddItems() {
     itemprice: '',
     type: '',
     description: '',
-    imageUrl: '' // State variable to store the image URL
+    imageUrl: '' 
   });
 
   const [message, setMessage] = useState('');
@@ -21,14 +21,14 @@ export default function AddItems() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:2024/additem', formData);
+      const response = await axios.post(`${config.url}/additem`, formData);
       if (response.status === 200) {
         setFormData({
           itemname: '',
           itemprice: '',
           type: '',
           description: '',
-          imageUrl: '' // Clear the image URL after submission
+          imageUrl: ''
         });
       }
       setMessage(response.data);

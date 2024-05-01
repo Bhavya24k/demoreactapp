@@ -23,7 +23,7 @@ export default function AdminLogin({onAdminLogin})
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2024/checkadminlogin', formData);
+      const response = await axios.post(`${config.url}/checkadminlogin`, formData);
       if (response.data!=null) 
       {
         onAdminLogin();

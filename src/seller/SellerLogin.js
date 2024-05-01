@@ -25,14 +25,14 @@ export default function SellerLogin({onSellerLogin})
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2024/checksellerlogin', formData);
+      const response = await axios.post(`${config.url}/checksellerlogin`, formData);
       if (response.data!=null) 
       {
         onSellerLogin();
 
         localStorage.setItem('seller', JSON.stringify(response.data));
         navigate("/sellerhome");
-        // window.location.href="https://newerp.kluniversity.in/"
+       
       } 
       else 
       {

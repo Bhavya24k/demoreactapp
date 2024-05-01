@@ -25,14 +25,14 @@ export default function CustomerLogin({onCustomerLogin})
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2024/checkcustomerlogin', formData);
+      const response = await axios.post(`${config.url}/checkcustomerlogin`, formData);
       if (response.data!=null) 
       {
         onCustomerLogin();
 
         localStorage.setItem('customer', JSON.stringify(response.data));
         navigate("/customerhome");
-        // window.location.href="https://newerp.kluniversity.in/"
+      
       } 
       else 
       {

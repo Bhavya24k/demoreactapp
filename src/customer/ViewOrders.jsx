@@ -13,7 +13,7 @@ export default function ViewOrders() {
             const parsedCustomerData = JSON.parse(storedCustomerData);
             setCustomerData(parsedCustomerData);
         }
-    }, []); // Empty dependency array ensures it runs only once on mount
+    }, []);
 
     useEffect(() => {
         if (customerData) {
@@ -23,7 +23,7 @@ export default function ViewOrders() {
 
     const fetchOrders = async () => {
         try {
-            const response = await axios.get(`http://localhost:2024/orders/${customerData.email}`);
+            const response = await axios.get(`${config.url}/orders/${customerData.email}`);
             setOrders(response.data);
         } catch (error) {
             setError(error.response.data);

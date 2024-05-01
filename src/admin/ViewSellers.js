@@ -8,7 +8,7 @@ export default function ViewSellers() {
 
   const fetchSellers = async () => {
     try {
-      const response = await axios.get('http://localhost:2024/viewsellers');
+      const response = await axios.get(`${config.url}/viewsellers`);
       setSellers(response.data);
     } catch (error) {
       console.error(error.message);
@@ -21,7 +21,7 @@ export default function ViewSellers() {
 
   const deleteSeller = async (email) => {
     try {
-      await axios.delete(`http://localhost:2024/deleteseller/${email}`);
+      await axios.delete(`${config.url}/deleteseller/${email}`);
       fetchSellers();
     } catch (error) {
       console.error(error.message);

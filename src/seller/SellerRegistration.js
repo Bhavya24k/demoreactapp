@@ -14,9 +14,9 @@ export default function SellerRegistration()
     address: ''
   });
 
-  //message state variable
+
   const [message, setMessage] = useState('');
-  //error state variable
+ 
   const [error, setError] = useState('');
 
   const handleChange = (e) => 
@@ -35,7 +35,7 @@ const changetext = (e) =>{
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2024/insertseller', formData);
+      const response = await axios.post(`${config.url}/insertseller`, formData);
       if (response.status === 200) 
       {
         setFormData({

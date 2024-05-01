@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import config from '../config'
+import './admin.css'
 
 export default function ViewCustomers() {
   const [customers, setCustomers] = useState([]);
 
   const fetchCustomers = async () => {
     try {
-      const response = await axios.get('http://localhost:2024/viewcustomers');
+      const response = await axios.get(`${config.url}/viewcustomers`);
       setCustomers(response.data);
     } catch (error) {
       console.error(error.message);
@@ -20,7 +21,7 @@ export default function ViewCustomers() {
 
   const deleteCustomer = async (email) => {
     try {
-      await axios.delete(`http://localhost:2024/deletecustomer/${email}`);
+      await axios.delete(`${config.url}/deletecustomer/${email}`);
       fetchCustomers();
     } catch (error) {
       console.error(error.message);
@@ -29,7 +30,7 @@ export default function ViewCustomers() {
 
   return (
     <div className="container">
-      <h1>Customers</h1>
+      <h1><center>Customers</center></h1>
       <table className="customer-table">
         <thead>
           <tr>

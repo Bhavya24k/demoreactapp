@@ -22,7 +22,7 @@ export default function ViewOrdersPlaced() {
   const fetchOrdersPlaced = async () => {
     try 
     {
-      const response = await axios.get(`http://localhost:2024/viewordersplaced`);
+      const response = await axios.get(`${config.url}/viewordersplaced`);
       setOrdersPlaced(response.data);
     } 
     catch (error) 
@@ -38,7 +38,7 @@ export default function ViewOrdersPlaced() {
   const handleStatusChange = async (orderId, status) => {
     try 
     {
-      const response = await axios.post('http://localhost:2024/changestatus', { orderId, status });
+      const response = await axios.post(`${config.url}/changestatus`, { orderId, status });
       fetchOrdersPlaced();
       setMessage(response.data);
       setError(''); 

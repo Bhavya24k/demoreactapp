@@ -19,7 +19,7 @@ export default function ViewItems() {
 
   const fetchItems = async () => {
     try {
-      const response = await axios.get('http://localhost:2024/viewitems');
+      const response = await axios.get(`${config.url}/viewitems`);
       setItems(response.data);
     } catch (error) {
       console.error(error.message);
@@ -33,7 +33,7 @@ export default function ViewItems() {
   const orderItem = async (itemname,customeremail) => {
     try 
     {
-      const response = await axios.post('http://localhost:2024/orderitems', { itemname, customeremail });
+      const response = await axios.post(`${config.url}/orderitems`, { itemname, customeremail });
       fetchItems();
       setMessage(response.data);
       setError('');

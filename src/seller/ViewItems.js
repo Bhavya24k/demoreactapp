@@ -17,7 +17,7 @@ export default function ViewItems() {
 
   const fetchItems = async () => {
     try {
-      const response = await axios.get('http://localhost:2024/viewitems');
+      const response = await axios.get(`${config.url}/viewitems`);
       setItems(response.data);
     } catch (error) {
       console.error(error.message);
@@ -27,7 +27,7 @@ export default function ViewItems() {
   const deleteItem = async (itemName) => {
     if (window.confirm("Are you sure you want to delete this item?")) {
       try {
-        await axios.delete(`http://localhost:2024/deleteitem`);
+        await axios.delete(`${config.url}/deleteitem`);
         fetchItems();
       } catch (error) {
         console.error(error.message);
