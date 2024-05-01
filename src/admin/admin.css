@@ -1,0 +1,88 @@
+/* admin-modern.css (consider renaming) */
+
+body {
+    background-color: #e4a477; /* Light blue background */
+    font-family: Arial, sans-serif; /* Modern font */
+  }
+  
+  form {
+    margin: auto;
+    width: 400px; /* Increased width */
+    padding: 20px; /* Added padding */
+    border: 1px solid #e1ab64; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="email"],
+  select,
+  input[type="date"],
+  textarea {
+    width: 100%; /* Full width within the form */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #da9c4b;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  table {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  th, td {
+    padding: 10px; /* Reduced padding */
+    border: 1px solid #ddd; /* Lighter border */
+  }
+  th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+  }
+  .container {
+    margin-left: 220px; 
+  }
+  .customer-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .customer-table th,
+  .customer-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .customer-table th {
+    background-color: #f2f2f2;
+  }
+  .customer-table button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  

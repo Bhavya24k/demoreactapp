@@ -1,0 +1,302 @@
+/* admin-modern.css (consider renaming) */
+
+body {
+    background-color: #e98b57; /* Light blue background */
+    font-family: Arial, sans-serif; /* Modern font */
+  }
+  
+  form {
+    margin: auto;
+    width: 400px; /* Increased width */
+    padding: 20px; /* Added padding */
+    border: 1px solid #e2a242; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="email"],
+  select,
+  input[type="date"],
+  textarea {
+    width: 100%; /* Full width within the form */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e58a59;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  
+  table {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  
+  th, td {
+    padding: 10px; /* Reduced padding */
+    border: 1px solid #ddd; /* Lighter border */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+  }
+  
+
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* admin-modern.css (consider renaming) */
+
+body {
+  background-color: #6c8fa6; /* Light blue background */
+  font-family: Arial, sans-serif; /* Modern font */
+}
+
+form {
+  margin: auto;
+  width: 400px; /* Increased width */
+  padding: 20px; /* Added padding */
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+select,
+input[type="date"],
+textarea {
+  width: 100%; /* Full width within the form */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+table {
+  width: 100%; /* Full width */
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+th, td {
+  padding: 10px; /* Reduced padding */
+  border: 1px solid #ddd; /* Lighter border */
+}
+th {
+  background-color: #f2f2f2; /* Light gray background for headers */
+}
+.container {
+  margin-left: 220px; 
+}
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.customer-table th,
+.customer-table td {
+  border: 1px solid #73a8bc;
+  padding: 8px;
+}
+.customer-table th {
+  background-color: #f2f2f2;
+}
+.customer-table button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card {
+  width: 25%; /* Adjust width as needed */
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Lighter border */
+  border-radius: 4px;
+  background-color: #4d5869; /* White background for better contrast */
+  box-shadow: 0 1px 3px rgba(39, 31, 31, 0.1); /* Subtle shadow for depth */
+  transition: all 0.2s ease-in-out; /* Add smooth hover effects */
+}
+
+.card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+.card-body {
+  padding: 15px; /* Adjust padding for content spacing */
+}
+
+.card-title {
+  font-size: 18px; /* Increase title size */
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 5px;
+  line-height: 1.5; /* Adjust line height for better readability */
+}
+
+.card-img-top {
+  width: 100%; /* Display image full width */
+  height: 200px; /* Set image height or use aspect ratio */
+  object-fit: cover; /* Crop image to fit within container */
+  border-top-left-radius: inherit; /* Inherit border radius from card */
+  border-top-right-radius: inherit;
+}
+
+.button {
+  /* Existing styles from your code */
+  margin-top: 10px; /* Add space between content and button */
+}
+@media print {
+  .container {
+    /* Adjust container styles for print */
+    page-break-inside: avoid; /* Avoid page breaks within the container */
+  }
+  
+  .card {
+    /* Adjust card styles for print */
+    width: 20%; /* Adjust width for two cards per row */
+    display: inline-block; /* Display cards horizontally */
+    margin: 0 10px 10px 10px; /* Adjust spacing for print */
+  }
+  
+  .card:nth-child(2n) {
+    margin-right: 0; /* Remove margin from rightmost card in each row */
+  }
+}
+
+form {
+  margin: auto;
+  width: 300px;
+  text-align: center; 
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: center; 
+}
+
+input[type='text'],
+input[type='password'],
+input[type='number'],
+input[type='email'],
+select,
+input[type='date'],
+textarea {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type='submit'] {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type='submit']:hover {
+  background-color: #555;
+}
+
+.profile-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+border: 1px solid ;
+}
+
+.profile-card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 300px;
+margin: 10px auto;
+text-align: center;
+font-family: arial;
+border: 3px solid black;
+padding: 10px; 
+}
+
+.logoutButton {
+background-color: #f44336;
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
+}
+
+.logoutButton:hover {
+background-color: #d32f2f; 
+}
+
+.logoutButton:focus {
+outline: none;
+}
+
+
