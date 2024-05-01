@@ -5,17 +5,9 @@ import config from '../config'
 
 export default function ViewOrdersPlaced() {
 
-  const [sellerData, setSellerData] = useState("");
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
 
-  useEffect(() => {
-    const storedSellerData = localStorage.getItem('seller');
-    if (storedSellerData) {
-      const parsedSellerData = JSON.parse(storedSellerData);
-      setSellerData(parsedSellerData)
-    }
-  }, []);
 
   const [ordersPlaced, setOrdersPlaced] = useState([]);
 

@@ -4,15 +4,7 @@ import './seller.css';
 import config from '../config'
 
 export default function ViewItems() {
-  const [sellerData, setSellerData] = useState("");
-
-  useEffect(() => {
-    const storedSellerData = localStorage.getItem('seller');
-    if (storedSellerData) {
-      const parsedSellerData = JSON.parse(storedSellerData);
-      setSellerData(parsedSellerData)
-    }
-  }, []);
+  
   const [items, setItems] = useState([]);
 
   const fetchItems = async () => {
