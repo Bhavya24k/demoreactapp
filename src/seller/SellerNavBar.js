@@ -1,12 +1,9 @@
 import React from 'react'
-import SellerLogin from './SellerLogin'
 import {Routes,Route,Link,useNavigate} from 'react-router-dom'
-import SellerRegistration from './SellerRegistration'
 import SellerHome from './SellerHome'
 import AddItems from './AddItems'
 import ViewItems from './ViewItems'
 import ViewOrdersPlaced from './ViewOrdersPlaced'
-import config from '../config'
 
 export default function SellerNavBar() {
 
